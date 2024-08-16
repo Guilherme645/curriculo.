@@ -1,0 +1,29 @@
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+.small-image{
+  width: 140px;
+  margin-left: 5px;
+}
+.butao{
+  margin-top: -100px;
+  margin-left: 150px;
+}
+.produtos{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+
+.pesquisa{
+  margin-top: -100px;
+  margin-left: 1020px;
+}
+.user{
+  margin-left: 1090px;
+  margin-top:42px;
+}

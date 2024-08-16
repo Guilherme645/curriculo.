@@ -1,0 +1,6 @@
+<H1><strong>CLIENTES</strong> </H1>
+<div class="clientes-container">
+  <div *ngFor="let cliente of clientes" class="cliente-card">
+    <img [src]="cliente.logo" [alt]="cliente.name" class="cliente-logo">
+  </div>
+</div>

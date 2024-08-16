@@ -1,0 +1,30 @@
+
+.menu {
+    margin-left: 55px;
+    margin-right: 20px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-top: 10px; /* Ajuste para que o menu não fique sobreposto */
+}
+
+.sidebar{
+    margin-top: 20px;
+}
+.contato{
+    margin-top: 20px;
+}
+.sobre{
+margin-top: -100px;
+}
+.projetos{
+    margin-top: -30px;
+}
+.contato{
+    margin-top: 100px;
+}
+.cliente{
+    margin-top: 70px;
+}
+.somos{
+    margin-top: -150px;
+}
