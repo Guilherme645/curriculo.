@@ -46,6 +46,11 @@ export class ProjectsComponent implements OnInit {
         image: './assets/ordem de serviço.png'
       },
       {
+        name: 'Programa de Manutenção',
+        description: 'O PensamentoLivre é uma biblioteca digital para registrar, editar e organizar seus pensamentos. Com uma interface simples, você pode armazenar, revisar e excluir suas ideias de forma prática e acessível. Ideal para quem precisa de um espaço dedicado para suas reflexões.',
+        image: './assets/upsnn.png'
+      },
+      {
         name: 'PensamentoLivre',
         description: 'O PensamentoLivre é uma biblioteca digital para registrar, editar e organizar seus pensamentos. Com uma interface simples, você pode armazenar, revisar e excluir suas ideias de forma prática e acessível. Ideal para quem precisa de um espaço dedicado para suas reflexões.',
         image: './assets/memoteca.png'

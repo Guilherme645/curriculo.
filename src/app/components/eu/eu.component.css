@@ -61,7 +61,7 @@
 }
 
 .profile-photo {
-  width: 70%;
+  width: 90%;
   max-width: 280px;
   border-radius: 50%;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Sombra ao redor da imagem */
