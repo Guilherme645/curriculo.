@@ -1,0 +1,54 @@
+.tech-showcase {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.tech-showcase .tech-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s ease; /* Transição suave para o efeito de zoom */
+}
+
+.p-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 8px;
+  min-height: 120px; /* Altura mínima para todos os cards */
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para o zoom e a sombra */
+}
+
+.p-card:hover {
+  transform: scale(1.1); /* Efeito de zoom */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.col-12 {
+  flex: 1 1 16%; /* Largura uniforme para todos os cards */
+  max-width: 16%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .col-12 {
+    flex: 1 1 50%; /* No celular, cada item ocupará 50% da largura */
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .col-12 {
+    flex: 1 1 100%; /* Em telas muito pequenas, cada item ocupará 100% da largura */
+    max-width: 100%;
+  }
+}

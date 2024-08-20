@@ -1,0 +1,88 @@
+body {
+    background-color: #000; /* Define o fundo preto */
+    color: #fff; /* Define a cor padrão do texto para branco */
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .about-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    height: 100vh;
+  }
+  
+  .intro-text {
+    max-width: 60%;
+  }
+  
+  .typewriter {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff; /* Cor do texto em branco */
+    overflow: hidden;
+    border-right: 3px solid #fff; /* O cursor também em branco */
+    white-space: nowrap;
+    letter-spacing: 0.15em;
+    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+  
+  .subtitle {
+    font-size: 1.25rem;
+    color: #bbb; /* Cor do subtítulo em cinza claro */
+    margin-top: 0.5rem;
+  }
+  
+  .img {
+    max-width: 35%;
+    text-align: right;
+  }
+  
+  .profile-photo {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 50%;
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.2); /* Sombra branca suave */
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white }
+  }
+
+.menu {
+    margin-left: 55px;
+    margin-right: 20px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-top: 10px; /* Ajuste para que o menu não fique sobreposto */
+}
+
+.sidebar{
+    margin-top: 20px;
+}
+.contato{
+    margin-top: 20px;
+}
+.sobre{
+margin-top: -100px;
+}
+.projetos{
+    margin-top: -30px;
+}
+.contato{
+    margin-top: 100px;
+}
+.cliente{
+    margin-top: -50px;
+}
+.somos{
+    margin-top: -150px;
+}

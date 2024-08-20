@@ -32,6 +32,16 @@ import { BarraDePesquisaComponent } from './components/barraDePesquisa/barraDePe
 import { RodapeComponent } from './components/rodape/rodape.component';
 import { ClientesComponent } from './components/clientes/clientes.component';
 import { QmsomosComponent } from './components/qmsomos/qmsomos.component';
+import { ConhecimentosComponent } from './components/conhecimentos/conhecimentos.component';
+import { AppRoutingModule } from './app-routing.module';
+import { PrincipalComponent } from './pages/principal/principal.component';
+import { HttpClientModule } from '@angular/common/http'; 
+import { EuComponent } from './components/eu/eu.component';
+import { SobreMimComponent } from './components/sobreMim/sobreMim.component';
+import { DialogModule } from 'primeng/dialog';
+import { LigarComponent } from './components/ligar/ligar.component';
+import { PaceiriasComponent } from './components/paceirias/paceirias.component';
+
 
 @NgModule({
   declarations: [
@@ -46,8 +56,15 @@ import { QmsomosComponent } from './components/qmsomos/qmsomos.component';
     BarraDePesquisaComponent,
     RodapeComponent,
     ClientesComponent,
-    QmsomosComponent
-  ],
+    QmsomosComponent,
+    ConhecimentosComponent,
+    PrincipalComponent,
+  EuComponent,
+SobreMimComponent,
+LigarComponent,
+PaceiriasComponent
+
+],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -62,7 +79,11 @@ import { QmsomosComponent } from './components/qmsomos/qmsomos.component';
     MatCardModule,
     SidebarModule,
     MegaMenuModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule,
+    HttpClientModule,
+    DialogModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

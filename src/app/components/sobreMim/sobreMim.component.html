@@ -1,0 +1,21 @@
+<section class="about-me-section">
+  <p-card header="Quem sou?" class="about-me-card">
+    <p>
+      Com um ano de experiência como programador front-end, especializado em Angular, tive a oportunidade 
+      de colaborar com três clientes distintos, onde apliquei e refinei minhas habilidades em desenvolvimento web. Sou profundamente comprometido com a aprendizagem 
+      contínua de novas tecnologias e com a criação de soluções que harmonizam estética e funcionalidade.
+    </p>
+    <button pButton type="button" label="Saiba Mais" icon="pi pi-info-circle" (click)="displayMoreInfo = true"></button>
+  </p-card>
+
+  <p-dialog header="Mais Sobre Mim" [(visible)]="displayMoreInfo" [modal]="true" width="30vw" [style]="{minWidth: '300px'}" [closable]="true">
+    <p>
+      Muito prazer! Me chamo Guilherme Carvalho da Silva, sou programador júnior de front-end com um ano de experiência, especializado em Angular. Durante esse tempo, tive a oportunidade de colaborar com três clientes, aplicando e aprimorando minhas habilidades em desenvolvimento web e em projetos de automatização de processos. Atualmente, estou cursando Superior de Tecnologia em Análise e Desenvolvimento de Sistemas no Instituto de Educação Superior de Brasília (IESB), com previsão de conclusão em 2025. Tenho grande apreço por idiomas, sou formado em inglês e estou cursando francês.
+    </p>
+    <p>
+      Além do curso superior, possuo experiência como técnico de hardware. Minhas habilidades técnicas incluem HTML5, CSS3, Javascript, Typescript e programação em Angular, que utilizo em meus projetos para continuamente me aperfeiçoar como profissional.
+    </p>
+    <p>
+      Sou determinado em expandir minha experiência e contribuir efetivamente para projetos desafiadores. Alguns dos meus projetos notáveis incluem um projeto de análise de crédito, um projeto de manutenção de nobreak e um programa de busca de ordem de serviço (API). Além disso, estou ativo em redes sociais, onde compartilho meu progresso e colaboro com outros profissionais da área.
+    </p>
+</p-dialog>

@@ -12,12 +12,12 @@
   width: 100%;
   max-width: 250px;
   border-radius: 50%;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 4px 15px#4bbddb;
 }
 
 .about-me h2 {
   font-size: 2rem;
-  color: #333;
+  color: #3a92a8;
   margin-top: 1rem;
 }
 

@@ -20,10 +20,20 @@
   opacity: 1;
   transform: translateY(0); /* Move para a posição original */
 }
-h1{
+h2{
   margin-left: 740px;
   margin-top: 100px;
 }
+.popup-buttons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.popup-buttons button {
+  width: 45%;
+}
+
 
 .custom-card img.project-image {
   position: absolute;

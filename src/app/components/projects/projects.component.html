@@ -1,4 +1,4 @@
-<h1><strong>PROJETOS</strong></h1>
+<h2>PROJETOS</h2>
 <p-carousel [value]="projects" [numVisible]="3" [numScroll]="3">
   <ng-template let-project pTemplate="item">
     <p-card 
@@ -12,12 +12,16 @@
   </ng-template>
 </p-carousel>
 
-<!-- Pop-up para exibição dos detalhes do projeto -->
 <div *ngIf="selectedProject" class="popup-overlay" (click)="closePopup()">
-  <div class="popup-content">
+  <div class="popup-content" (click)="$event.stopPropagation()">
     <span class="close-btn" (click)="closePopup()">&times;</span>
     <h3>{{ selectedProject.name }}</h3>
     <p>{{ selectedProject.description }}</p>
     <img [src]="selectedProject.image" alt="{{ selectedProject.name }}" class="popup-image">
+    
+    <div class="popup-buttons">
+      <button pButton type="button" label="Abrir Projeto" icon="pi pi-external-link" (click)="openProject(selectedProject.projectUrl)"></button>
+      <button pButton type="button" label="GitHub" icon="pi pi-github" (click)="openGitHub(selectedProject.githubUrl)"></button>
+    </div>
   </div>
 </div>

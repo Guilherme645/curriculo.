@@ -1,0 +1,146 @@
+.about-me {
+  display: flex;
+  justify-content: flex-end; /* Alinha o conteúdo à direita */
+  align-items: center; /* Centraliza verticalmente o conteúdo */
+  height: 100vh; /* Faz o conteúdo ocupar a altura total da tela */
+  text-align: right; /* Alinha o texto à direita */
+  padding-right: 18rem; /* Adiciona espaço à direita */
+}
+
+.intro-text {
+  margin-right: 2rem; /* Espaçamento entre o texto e a imagem */
+}
+
+.button-group {
+  margin-top: 1.5rem;
+  margin-left: 500px;
+  display: flex;
+  gap: 1rem; /* Espaço entre os botões */
+}
+
+.download-btn {
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.floating-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.whatsapp-button {
+  background-color: #25D366;
+  color: white;
+  font-size: 2rem;
+  border-radius: 50%;
+  padding: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-button i {
+  font-size: 1.5rem;
+}
+
+.download-btn:hover {
+  background-color: #444444;
+}
+
+.profile-photo {
+  width: 70%;
+  max-width: 280px;
+  border-radius: 50%;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Sombra ao redor da imagem */
+  transition: transform 0.3s ease-in-out; /* Transição suave para o efeito de zoom */
+}
+
+.profile-photo:hover {
+  transform: scale(1.1); /* Efeito de zoom */
+}
+
+.img {
+  position: relative;
+  animation: float 4s ease-in-out infinite; /* Animação de flutuação */
+}
+
+.img::before {
+  content: '';
+  position: absolute;
+  top: 10px; /* Ajuste conforme necessário */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 90%;
+  background-color: rgba(0, 0, 0, 0); /* Ajuste a opacidade conforme necessário */
+  border-radius: 50%; /* Sombra arredondada */
+  filter: blur(15px); /* Faz a sombra parecer mais suave */
+  z-index: -1;
+}
+
+.about-me h2 {
+  font-size: 2rem;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+.about-me p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.intro-section {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.typewriter {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000;
+  overflow: hidden; /* Garante que o texto não transborde o contêiner */
+  border-right: 3px solid; /* O cursor */
+  white-space: nowrap; /* Mantém o texto em uma única linha */
+  margin: 0 auto; /* Centraliza o texto horizontalmente */
+  letter-spacing: 0.15em; /* Adiciona um pequeno espaço entre as letras */
+  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0); /* Posição inicial e final */
+  }
+  50% {
+    transform: translateY(-20px); /* Eleva a imagem */
+  }
+}

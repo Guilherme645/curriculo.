@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sidebar',
@@ -10,19 +13,15 @@ export class SidebarComponent implements OnInit {
     throw new Error('Method not implemented.');
   }
   sidebarVisible: boolean = false;
+  constructor(
+    private http: HttpClient,
+    private router: Router,
+  ){}
 
-  inicio() {
-    console.log('Início clicado');
-    // Implementação adicional para redirecionar ou executar ações na página inicial
+  principal() {
+    this.router.navigate(['/principal']);
   }
-
-  clientes() {
-    console.log('Clientes clicado');
-    // Implementação adicional para redirecionar ou executar ações na seção de clientes
-  }
-
-  out() {
-    console.log('Sair clicado');
-    // Implementação adicional para sair ou redirecionar para logout
+  index() {
+    this.router.navigate(['/index']);
   }
 }

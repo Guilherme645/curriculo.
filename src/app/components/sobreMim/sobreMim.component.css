@@ -1,0 +1,40 @@
+.about-me-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:80vh; /* Garante que o conteúdo ocupe a altura total da tela */
+    padding: 1rem;
+  }
+  
+  .about-me-card {
+    width: 100%;
+    max-width: 900px; /* Largura máxima do card */
+    text-align: center;
+    padding: 2rem; /* Espaçamento interno */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.986); /* Sombra para dar profundidade */
+    border-radius: 10px; /* Cantos arredondados */
+    background-color: #ffffff38; /* Fundo branco */
+    transition: transform 0.3s ease-in-out;
+    margin-top: -200px;
+  }
+  
+  .about-me-card:hover {
+    transform: scale(1.05); /* Efeito de zoom suave ao passar o mouse */
+  }
+  
+  .p-button {
+    margin-top: 1rem;
+  }
+  .p-dialog {
+    max-width: 600px; 
+  }
+  
+  .p-dialog .p-dialog-content {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .p-dialog-mask {
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro com opacidade */
+  }
+  

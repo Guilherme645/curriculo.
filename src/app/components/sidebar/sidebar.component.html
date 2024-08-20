@@ -1,13 +1,42 @@
 <mat-card-actions>
   <p-sidebar [(visible)]="sidebarVisible">
     <h1>Painel</h1>
+    
     <div class="flex justify-content-center flex-wrap gap-3 mb-4">
-        <p-button icon="pi pi-search" [rounded]="true" severity="secondary" /> <br><br>
-        <p-button (onClick)="inicio()"icon="pi pi-home" [rounded]="true" severity="info" /><br><br>
-        <p-button (onClick)="clientes()" icon="pi pi-users" [rounded]="true" severity="info" /><br><br>
-        <p-button (onClick)="out()" icon="pi pi-sign-out" [rounded]="true" severity="out" /><br>
+        <p-button (onClick)="index()" icon="pi pi-code" [rounded]="true" severity="secondary" /> <br><br>
+        <p-button (onClick)="principal()"icon="pi pi-user" [rounded]="true" severity="secondary" /><br><br>
+    </div>
+    
+    <div class="contact-info">
+      <p>
+        <a href="mailto:guilherme64513@gmail.com">
+          <i class="pi pi-envelope"></i> guilherme64513&#64;gmail.com
+        </a>
+      </p>
+      <p>
+        <a href="tel:+5561984264979">
+          <i class="pi pi-phone"></i> (61) 98426-4979
+        </a>
+      </p>
+    </div>
+
+    <div class="container">
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/seu-perfil" target="_blank" class="social-icon">
+          <i class="pi pi-linkedin"></i>
+        </a>
+        <a href="https://github.com/seu-usuario" target="_blank" class="social-icon">
+          <i class="pi pi-github"></i>
+        </a>
+        <a href="https://discord.com/users/seu-id" target="_blank" class="social-icon">
+          <i class="pi pi-discord"></i>
+        </a>
+      </div>
+      <p>&copy; 2024 AllCortex. Todos os direitos reservados.</p>
     </div>
   </p-sidebar>
+  
   <div class="butao">
-    <p-button (click)="sidebarVisible = true" icon="pi pi-list" class="p-button-code" />
-  </div></mat-card-actions>
+    <p-button (click)="sidebarVisible = true" icon="pi pi-list" severity="secondary" class="p-button-code" />
+  </div>
+</mat-card-actions>
