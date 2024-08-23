@@ -1,3 +1,4 @@
+/* Estilos Gerais do Card */
 .custom-card {
   width: calc(100% - 20px);
   height: 250px;
@@ -10,30 +11,20 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: transform 0.3s ease-in-out, opacity 0.6s ease-out; /* Adiciona a transição para animação */
+  transition: transform 0.3s ease-in-out, opacity 0.6s ease-out;
   margin: 10px;
-  opacity: 0; /* Começa invisível */
-  transform: translateY(50px); /* Começa deslocado para baixo */
+  opacity: 0;
+  transform: translateY(50px);
 }
 
 .custom-card.visible {
   opacity: 1;
-  transform: translateY(0); /* Move para a posição original */
-}
-h2{
-  margin-left: 740px;
-  margin-top: 100px;
-}
-.popup-buttons {
-  margin-top: 1rem;
-  display: flex;
-  justify-content: space-around;
+  transform: translateY(0);
 }
 
-.popup-buttons button {
-  width: 45%;
+.custom-card:hover {
+  transform: scale(1.05);
 }
-
 
 .custom-card img.project-image {
   position: absolute;
@@ -44,29 +35,28 @@ h2{
   object-fit: cover;
   opacity: 0.5;
 }
-.custom-card:hover {
-  transform: scale(1.05);
-}
+
 .custom-card .card-content {
   position: relative;
   z-index: 1;
   text-align: center;
-  color: #000000;
+  color: #000000; /* Ajuste para visibilidade */
 }
 
 .custom-card .card-content h3 {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   margin: 0;
   padding: 0;
 }
 
 .custom-card .card-content p {
-  font-size: 14px;
+  font-size: 0.9rem;
   margin: 5px 0 0 0;
   padding: 0;
 }
 
+/* Estilos do Popup */
 .popup-overlay {
   position: fixed;
   top: 0;
@@ -78,6 +68,7 @@ h2{
   justify-content: center;
   align-items: center;
   animation: fadeIn 0.3s ease-in-out;
+  z-index: 1000; /* Assegura que esteja acima de outros elementos */
 }
 
 .popup-content {
@@ -86,7 +77,7 @@ h2{
   border-radius: 8px;
   position: relative;
   max-width: 500px;
-  width: 100%;
+  width: 90%; /* Adapta a largura para dispositivos móveis */
   text-align: center;
   animation: slideIn 0.3s ease-in-out;
 }
@@ -106,10 +97,25 @@ h2{
   position: absolute;
   top: 10px;
   right: 10px;
-  font-size: 24px;
+  font-size: 1.5rem;
   cursor: pointer;
 }
 
+/* Botões no Popup */
+.popup-buttons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Permite que os botões se ajustem em linha */
+}
+
+.popup-buttons button {
+  width: 45%;
+  min-width: 120px; /* Garante que os botões tenham um tamanho mínimo adequado */
+  margin-bottom: 10px;
+}
+
+/* Animações */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -118,4 +124,59 @@ h2{
 @keyframes slideIn {
   from { transform: translateY(-50px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsividade para Mobile */
+@media (max-width: 768px) {
+  .custom-card {
+    height: 200px; /* Reduz a altura do card em telas menores */
+  }
+
+  .custom-card .card-content h3 {
+    font-size: 1.2rem; /* Ajusta o tamanho do título no card */
+  }
+
+  .custom-card .card-content p {
+    font-size: 0.8rem; /* Ajusta o tamanho do texto no card */
+  }
+
+  .popup-content {
+    padding: 15px; /* Ajusta o padding interno para telas menores */
+  }
+
+  .popup-buttons {
+    flex-direction: column; /* Empilha os botões em coluna */
+    gap: 10px; /* Espaçamento entre os botões */
+  }
+
+  .popup-buttons button {
+    width: 100%; /* Botões ocupam toda a largura disponível no mobile */
+  }
+
+  .close-btn {
+    font-size: 1.2rem; /* Ajusta o tamanho do botão de fechar */
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-card {
+    height: 180px; /* Reduz ainda mais a altura do card para telas muito pequenas */
+  }
+
+  .custom-card .card-content h3 {
+    font-size: 1rem; /* Reduz o tamanho do título no card */
+  }
+
+  .custom-card .card-content p {
+    font-size: 0.7rem; /* Reduz o tamanho do texto no card */
+  }
+
+  .popup-content {
+    padding: 10px; /* Padding menor para telas pequenas */
+    max-width: 90%; /* Ajusta a largura do popup */
+  }
+
+  .popup-buttons {
+    gap: 8px; /* Reduz o espaçamento entre os botões */
+  }
 }
