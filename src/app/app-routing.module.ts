@@ -5,7 +5,7 @@ import { PrincipalComponent } from './pages/principal/principal.component';
 
 const routes: Routes = [
 
-    { path: '', redirectTo: '/index', pathMatch: 'full'},
+    { path: '', redirectTo: '/principal', pathMatch: 'full'},
     {
       path: 'index',
       component:IndexComponent

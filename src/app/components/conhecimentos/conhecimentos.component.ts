@@ -5,12 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './conhecimentos.component.html',
   styleUrls: ['./conhecimentos.component.css']
 })
-export class ConhecimentosComponent implements OnInit {
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
-  }
+export class ConhecimentosComponent  {
 
-  
   technologies = [
     { name: 'Angular', icon: 'pi pi-code' },
     { name: 'React', icon: 'pi pi-cog' },

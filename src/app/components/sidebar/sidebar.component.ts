@@ -8,10 +8,8 @@ import { Router } from '@angular/router';
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.css']
 })
-export class SidebarComponent implements OnInit {
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
-  }
+export class SidebarComponent  {
+
   sidebarVisible: boolean = false;
   constructor(
     private http: HttpClient,
