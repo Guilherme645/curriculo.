@@ -1,3 +1,4 @@
+/* Estilos Gerais */
 .about-me {
   display: flex;
   justify-content: flex-end; /* Alinha o conteúdo à direita */
@@ -13,9 +14,9 @@
 
 .button-group {
   margin-top: 1.5rem;
-  margin-left: 500px;
   display: flex;
-  gap: 1rem; /* Espaço entre os botões */
+  gap: 1rem; 
+  margin-left: 500px;
 }
 
 .download-btn {
@@ -144,3 +145,67 @@
     transform: translateY(-20px); /* Eleva a imagem */
   }
 }
+
+/* Estilos Responsivos */
+/* Estilos Responsivos */
+
+@media (max-width: 1024px) {
+  .about-me {
+    padding-right: 5rem; /* Reduz o padding para telas menores */
+    padding-left: 2rem; /* Adiciona um pouco de padding à esquerda */
+  }
+  
+  .button-group {
+    margin-left: 0; /* Remove o espaçamento à esquerda */
+    justify-content: flex-start; /* Garante que os botões fiquem alinhados à esquerda */
+  }
+}
+
+@media (max-width: 768px) {
+  .about-me {
+    flex-direction: column; /* Alinha o conteúdo em coluna */
+    text-align: center; /* Centraliza o texto */
+    padding-right: 0;
+    padding-left: 0;
+    height: auto; /* Permite que o conteúdo se ajuste */
+    padding: 6rem; /* Ajusta o padding para telas menores */
+  }
+
+  .intro-text {
+    margin-right: 0; /* Remove o espaçamento à direita */
+    margin-bottom: 1.5rem; /* Adiciona espaçamento abaixo do texto */
+    max-width: 130%; /* Garante que o texto ocupe a largura total disponível */
+  }
+
+  .button-group {
+    flex-direction: column; /* Organiza os botões em coluna */
+    margin-left: 0; /* Remove o espaçamento à esquerda */
+    width: 100%;
+    justify-content: center;
+    gap: 0.75rem; /* Reduz o espaçamento entre os botões */
+  }
+
+  .profile-photo {
+    max-width: 120px; /* Reduz ainda mais o tamanho da imagem para caber melhor no layout */
+    margin-bottom: 9.5rem; /* Ajusta o espaçamento abaixo da imagem */
+  }
+
+  .typewriter {
+    font-size: 1.8rem; /* Ajusta o tamanho do texto animado */
+  }
+
+  .about-me h2 {
+    font-size: 1.0rem; /* Reduz o tamanho do cabeçalho */
+  }
+
+  .about-me p {
+    font-size: 0.9rem; /* Reduz o tamanho do parágrafo */
+    margin-bottom: 1rem; /* Ajusta o espaçamento inferior */
+  }
+
+  .floating-whatsapp {
+    bottom: 10px;
+    right: 10px;
+  }
+}
+  
