@@ -17,6 +17,20 @@
   transform: translateY(50px);
 }
 
+.projetos-titulo {
+  text-align: center;
+  font-size: 2rem; /* Tamanho do texto */
+  margin-top: 2rem; /* Espaçamento superior */
+  margin-bottom: 2rem; /* Espaçamento inferior */
+  font-weight: bold; /* Negrito */
+}
+
+.projetos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .custom-card.visible {
   opacity: 1;
   transform: translateY(0);

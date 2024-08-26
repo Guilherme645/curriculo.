@@ -1,34 +1,38 @@
 .clientes-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  .cliente-card {
-    margin: 10px;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
-    background-color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .cliente-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .cliente-logo {
-    max-width: 250px;
-    max-height: 200px;
-    object-fit: contain;
-  }
-h2{
-    margin-top: 0px;
-margin-left: 740px;
+  display: flex;
+  flex-wrap: wrap; /* Permite que os logos se ajustem em várias linhas */
+  justify-content: center; /* Centraliza os logos na horizontal */
+  align-items: center; /* Centraliza os logos na vertical */
+  flex-direction: column; /* Mantém a organização em coluna */
+  padding: 20px;
 }
-  
+
+.clientes-titulo {
+  text-align: center;
+  font-size: 2rem; /* Tamanho do texto */
+  margin-top: 2rem; /* Espaçamento superior */
+  margin-bottom: 2rem; /* Espaçamento inferior */
+  font-weight: bold; /* Negrito */
+}
+
+.cliente-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px; /* Espaçamento entre os logos */
+  transition: transform 0.3s ease-in-out; /* Suaviza o efeito hover */
+}
+
+.cliente-card:hover {
+  transform: scale(1.05); /* Aumenta ligeiramente o logo ao passar o mouse */
+}
+
+.cliente-logo {
+  max-width: 250px;
+  max-height: 200px;
+  object-fit: contain; /* Garante que a imagem se ajuste dentro das dimensões sem distorcer */
+}
+
+h2 {
+  margin: 0 auto; /* Centraliza o título na horizontal */
+}
